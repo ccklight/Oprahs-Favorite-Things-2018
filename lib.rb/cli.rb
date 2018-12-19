@@ -52,4 +52,6 @@ class OprahsFavoriteThings::CLI
     puts ""
     OprahsFavoriteThings::Favorites.all[from_number-1, 10].each.with_index(from_number) do |favorite, index|
       puts "#{index}. #{{favorite.description} - '#{favorite.retailer}"
-      
+      end
+  end 
+end
