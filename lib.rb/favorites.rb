@@ -1,4 +1,4 @@
-class Favorites
+class OprahsFavoriteThings
 
   attr_accessors
 
