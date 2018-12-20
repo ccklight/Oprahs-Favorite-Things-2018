@@ -2,22 +2,29 @@ class OprahsFavoriteThings::Favorites
 
   attr_accessors :description, :cost, :retailer # these are the three attributes to be extracted from site
 
-  @@all - [] # empty array in which to place favorites 
+  @@all - [] # empty array in which to place the favorites
 
   def self.new_from_index_page(favorites)
-    self = OprahsFavoriteThings # the self is the class
-    new = index.new  # new means each individual favorite item
+    self = OprahsFavoriteThings # the self is the class of favorites
+    new = index.new  # the word new means each new individual favorite item
     new_from_index_page = favorites.new # this shows what each new item is
-    @index = index # each index item is equivalent to each item pulled from the index
+
+    @index = index # each index item is equivalent to each item pulled from the index to be scraped
     @list = list(favorites) # the instance of the list is equivalent to the list which has each favorite passed in
+
     list << favorites_from_index(favorites) # the list will have each favorite pulled from the index shovelled in
+
     self << favorite # each favorite is also passed into the class
-    self.new # the new method of the class will be returned
+    self.new # each instance will be returned and placed into the empty array 
 
   end
 
-  def initialize(favorites)
-
+  def initialize(favorites = nil, description = nil, cost = nil, retailer = nil, url = nil)
+    @description = description
+    @cost = cost
+    @retailer = retailer
+    @url = url
+    @@all << self
   end
 
   def self.all
