@@ -1,6 +1,6 @@
 class OprahsFavoriteThings
 
-  attr_accessors
+  attr_accessors :description, :cost, :retailer 
 
   @@all - []
 
