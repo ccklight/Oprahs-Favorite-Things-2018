@@ -2,6 +2,8 @@ class OprahsFavoriteThings::Scraper
 
   def get_page
     Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
+    
+binding pry
   end
 
   def scrape_favorites_index
