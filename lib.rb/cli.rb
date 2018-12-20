@@ -6,6 +6,11 @@ class OprahsFavoriteThings::CLI
     start
   end
 
+  def preparation
+    input = nil
+    while input != "exit"
+  end 
+
   def start
     puts ""
     puts "What number of favorite things would you like to see? 1-5, 6-10, 11-15?"
@@ -53,5 +58,5 @@ class OprahsFavoriteThings::CLI
     OprahsFavoriteThings::Favorites.all[from_number-1, 10].each.with_index(from_number) do |favorite, index|
       puts "#{index}. #{{favorite.description} - '#{favorite.retailer}"
       end
-  end 
+  end
 end
