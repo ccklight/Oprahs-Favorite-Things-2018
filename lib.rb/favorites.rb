@@ -39,19 +39,13 @@ class OprahsFavoriteThings::Favorites
   def self.find_by_name(favorites)
     self.all.find do |favorites|
       self.favorite == favorite
+    end 
   end
 
 
   def website_url
     website_url = website.url
     website.url = www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654
-  end
-
-
-  def description
-    @description << description
-
-
   end
 
 
