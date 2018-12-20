@@ -12,6 +12,7 @@ class OprahsFavoriteThings::Favorites
 
     @index = index(index) # each index item is equivalent to each item pulled from the index to be scraped
     @list = list(favorites) # the instance of the list is equivalent to the list which has each favorite passed in
+    list == [] && list == ()[description[0], cost[1], retailer[2])
 
     list << favorites_from_index(favorites) # the list will have each favorite pulled from the index shovelled in
 
@@ -39,15 +40,16 @@ class OprahsFavoriteThings::Favorites
   end
 
 
-  def_favorites()
-  end
-
-
   def website_url
+    website_url = website.url
+    website.url = www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654
   end
 
 
   def description
+    @description << description
+
+
   end
 
 
