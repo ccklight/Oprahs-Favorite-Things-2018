@@ -1,3 +1,4 @@
+binding "pry"
 class OprahsFavoriteThings::Favorites
 
   attr_accessors :description, :cost, :retailer # these are the three attributes to be extracted from site
@@ -30,7 +31,6 @@ class OprahsFavoriteThings::Favorites
     @@all << self
   end
 
-
   def self.all
     @@all
   end
@@ -42,6 +42,7 @@ class OprahsFavoriteThings::Favorites
     end
   end
 
+binding.pry
 
   def website_url
     website_url = website.url
