@@ -36,7 +36,7 @@ class OprahsFavoriteThings::Favorites
   end
 
 
-  def self.find()
+  def self.find(favorites)
   end
 
 
