@@ -1,16 +1,16 @@
-class OprahsFavoriteThings
+class OprahsFavoriteThings::Favorites
 
-  attr_accessors :description, :cost, :retailer 
+  attr_accessors :description, :cost, :retailer
 
   @@all - []
 
-  def self.new_from_index_page()
-    self.new( )
-
-
+  def self.new_from_index_page(favorites)
+    self.new(favorite )
+    self << favorite
   end
 
   def initialize
+
   end
 
   def self.all
