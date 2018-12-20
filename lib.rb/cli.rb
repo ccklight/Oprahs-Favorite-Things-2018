@@ -1,17 +1,15 @@
 class OprahsFavoriteThings::CLI
 
-  def call
+    def call
     OprahsFavoriteThings::CLI.new.make_favorites
     puts "Welcome to Oprah's Favorite Things 2018."
     start
   end
 
-  def preparation
-    input = nil
-    while input != "exit"
-  end 
 
   def start
+    #input = nil
+    #while input != "exit"
     puts ""
     puts "What number of favorite things would you like to see? 1-5, 6-10, 11-15?"
     input = gets.strip.to_i
