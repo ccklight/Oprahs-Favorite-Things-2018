@@ -4,18 +4,19 @@ class OprahsFavoriteThings::Favorites
 
   @@all - [] # empty array in which to place the favorites
 
+
   def self.new_from_index_page(favorites)
-    self = OprahsFavoriteThings # the self is the class of favorites
+    self = OprahsFavoriteThings(favorites) # the self is the class of favorites
     new = index.new  # the word new means each new individual favorite item
     new_from_index_page = favorites.new # this shows what each new item is
 
-    @index = index # each index item is equivalent to each item pulled from the index to be scraped
+    @index = index(index) # each index item is equivalent to each item pulled from the index to be scraped
     @list = list(favorites) # the instance of the list is equivalent to the list which has each favorite passed in
 
     list << favorites_from_index(favorites) # the list will have each favorite pulled from the index shovelled in
 
     self << favorite # each favorite is also passed into the class
-    self.new # each instance will be returned and placed into the empty array 
+    self.new # each instance will be returned and placed into the empty array
 
   end
 
@@ -27,20 +28,26 @@ class OprahsFavoriteThings::Favorites
     @@all << self
   end
 
+
   def self.all
   end
+
 
   def self.find()
   end
 
+
   def_favorites()
   end
+
 
   def website_url
   end
 
+
   def description
   end
+
 
   def doc
     @doc  ||= Nokogiri::HTML(open(self.url))
