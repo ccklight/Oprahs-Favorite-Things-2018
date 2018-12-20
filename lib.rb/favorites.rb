@@ -5,7 +5,7 @@ class OprahsFavoriteThings::Favorites
   @@all - [] # empty array in which to place the favorites
 
 
-  def self.new_from_index_page(favorites)
+  def self.new_from_index_page(favorites) #define each word to avoid 'no method error'
     self = OprahsFavoriteThings(favorites) # the self is the class of favorites
     new = index.new  # the word new means each new individual favorite item
     new_from_index_page = favorites.new # this shows what each new item is
@@ -17,6 +17,7 @@ class OprahsFavoriteThings::Favorites
 
     self << favorite # each favorite is also passed into the class
     self.new # each instance will be returned and placed into the empty array
+
 
   end
 
@@ -30,6 +31,7 @@ class OprahsFavoriteThings::Favorites
 
 
   def self.all
+    @@all
   end
 
 
