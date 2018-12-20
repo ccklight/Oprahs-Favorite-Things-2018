@@ -12,9 +12,9 @@ class OprahsFavoriteThings::Favorites
 
     @index = index(index) # each index item is equivalent to each item pulled from the index to be scraped
     @list = list(favorites) # the instance of the list is equivalent to the list which has each favorite passed in
-    list == [] && list == ()[description[0], cost[1], retailer[2])
+    list == [] && list == [description[0], cost[1], retailer[2]) # list is comprised of 3 things in first,second,third positions
 
-    list << favorites_from_index(favorites) # the list will have each favorite pulled from the index shovelled in
+    list << favorites_from_index(favorites) # the list will have each favorite pulled from the index shoveled in
 
     self << favorite # each favorite is also passed into the class
     self.new # each instance will be returned and placed into the empty array
