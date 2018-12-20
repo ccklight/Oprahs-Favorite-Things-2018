@@ -36,7 +36,9 @@ class OprahsFavoriteThings::Favorites
   end
 
 
-  def self.find(favorites)
+  def self.find_by_name(favorites)
+    self.all.find do |favorites|
+      self.favorite == favorite
   end
 
 
