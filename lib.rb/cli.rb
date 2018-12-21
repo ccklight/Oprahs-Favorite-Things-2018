@@ -10,6 +10,10 @@ class OprahsFavoriteThings::CLI
   def start
     #input = nil
     #while input != "exit"
+
+    Scraper.new.scrape_index(favorites)
+
+
     puts ""
     puts "What number of favorite things would you like to see? 1-5, 6-10, 11-15?"
     input = gets.strip.to_i
@@ -57,4 +61,10 @@ class OprahsFavoriteThings::CLI
       puts "#{index}. #{{favorite.description} - '#{favorite.retailer}"
       end
   end
+
+    def menu
+      Favorites.all
+      menu
+    end
+
 end
