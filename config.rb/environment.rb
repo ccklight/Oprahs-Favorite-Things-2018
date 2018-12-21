@@ -5,6 +5,8 @@ require 'open-url'
 require 'pry'
 require 'colorize'
 
+require_relative "../config/environment" 
+
 require_relative "oprahs_favorite_things_2018/version"
 require_relative "oprahs_favorite_things_2018/favorites"
 require_relative "oprahs_favorite_things_2018/cli"
