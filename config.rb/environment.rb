@@ -3,6 +3,11 @@ require_relative "..oprahs_favorites/version" # Per Flatiron, put the version fi
 require 'nokogiri'
 require 'open-url'
 require 'pry'
+require 'colorize'
+
+require_relative "oprahs_favorite_things_2018/version"
+require_relative "oprahs_favorite_things_2018/favorites"
+require_relative "oprahs_favorite_things_2018/cli"
 
 
   class MyError < StandardError # Create subclass of an exception. Source: Stack Overflow
