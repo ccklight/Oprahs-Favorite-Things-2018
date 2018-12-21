@@ -20,7 +20,6 @@ class OprahsFavoriteThings::Favorites
     self << favorite # each favorite is also passed into the class
     self.new # each instance will be returned and placed into the empty array
 
-
   end
 
   def initialize(favorites = nil, description = nil, cost = nil, retailer = nil, url = nil)
@@ -39,19 +38,18 @@ class OprahsFavoriteThings::Favorites
   def self.find_by_name(favorites)
     self.all.find do |favorites|
       self.favorite == favorite
-    end
+      end
   end
 
-#binding.pry
 
   def website_url
-    website_url = website.url
-    website.url = https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654
+    website_url = website.url # Establish that the website is the website
+    website.url = https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654 # the website url
   end
 
 
   def doc
-    @doc  ||= Nokogiri::HTML(open(self.url))
+    @doc  ||= Nokogiri::HTML(open(self.url)) #doc variable is equivalent to HTML string Nokogiri retrieves
   end
 
 end

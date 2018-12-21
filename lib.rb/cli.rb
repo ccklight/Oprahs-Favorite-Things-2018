@@ -4,7 +4,7 @@ class OprahsFavoriteThings::CLI
     OprahsFavoriteThings::CLI.new.make_favorites
     puts "Welcome to Oprah's Favorite Things 2018."
     start
-  end
+    end
 
 
   def start
@@ -26,7 +26,7 @@ class OprahsFavoriteThings::CLI
 
     favorites = OprahsFavoriteThings::Favorites.find(input.to_i)
 
-    print_favorites(favorites)
+    print_favorites(input)
 
     puts ""
     puts "Would you like to see another favorite? Please enter  Y or N"
