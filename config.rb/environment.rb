@@ -5,9 +5,6 @@ require 'open-url'
 require 'pry'
 
 
-module OprahFavorites
-
-
   class MyError < StandardError # Create subclass of an exception. Source: Stack Overflow
     def initialize(msg = "You've triggered a MyError")
       super(msg)
