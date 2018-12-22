@@ -22,6 +22,8 @@ class OprahsFavoriteThings::Favorites
 
   end
 
+
+
   def initialize(favorites = nil, description = nil, cost = nil, retailer = nil, url = nil)
     @description = description
     @cost = cost
