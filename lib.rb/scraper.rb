@@ -22,8 +22,6 @@ class OprahsFavoriteThings::Scraper
       favorite.retailer = **.css().text
 
       Scraper.new.print_favorite
-
-      #OprahsFavoriteThings::Favorites.new_from_index_page(f)|
       end
   end
 
