@@ -6,7 +6,7 @@ class OprahsFavoriteThings::Scraper
 
 
   def get_favorites
-    self.get_page.css(".") 
+    self.get_page.css(".")
   end
 
 
@@ -31,7 +31,15 @@ class OprahsFavoriteThings::Scraper
       end
   end
 
+  def print__favorites
+    self.make_favorites
+    Favorite.all.each do |favorite|
+      if favorite.description
+        puts "Description: '#{favorite.description}"
+        puts "Cost: #{favorite.cost}"
+        puts "Retail: #{favorite.retail}"
 
+    Scraper.new.print_favorites
 
 end
 
