@@ -5,24 +5,12 @@ class OprahsFavoriteThings::Scraper
   end
 
   def scrape_favorites_index
-    html = open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654")
+    html = open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654") #grabs HTML that makes up landing page
     doc = Nokogiti::HTML(html)
     doc.css(".favorites").each do |favorites|
         ****.text
     self.get_page.css("<a href="https://www.amazon.com/b?node=18188463011&amp;?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a> #first item
-    <h2 class="title___3Yk1c mb6 mt0 lh-none">APL: Athletic Propulsion Labs Women's Techloom Bliss Sneakers</h2>
-    #first item title
 
-    <a href="https://www.today.com/parents/holiday-family-matching-pajama-set-ideas-t117017" target="_blank" class=" vilynx_listened">matching family pajamas</a>
-    # first item's description
-
-    <a href="https://www.amazon.com/gp/product/B07FF7NVSM?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a>#second item
-    <h2 class="title___3Yk1c mb6 mt0 lh-none">APL: Athletic Propulsion Labs Women's Techloom Bliss Sneakers</h2> #second item's title
-
-    <
-    :a href="https://www.amazon.com/gp/product/B07HJJ92Z3?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a>
-    <h2 class="title___3Yk1c mb6 mt0 lh-none">Glamourpuss NYC Knitted Faux Fur Mitten</h2> #third item's title
-")
 
   end
 
