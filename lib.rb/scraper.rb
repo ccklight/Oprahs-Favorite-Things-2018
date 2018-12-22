@@ -15,8 +15,15 @@ class OprahsFavoriteThings::Scraper
   end
 
   def make_favorites
-    scrape_favorites_index.each do |f|
-      OprahsFavoriteThings::Favorites.new_from_index_page(f)|
+    self.get_favorites.each do |f|
+      favorite = Favorite.new
+      favorite.description = post.css ("").text
+      favorite.cost = **.css ().text
+      favorite.retailer = **.css().text
+
+      Scraper.new.print_favorite
+
+      #OprahsFavoriteThings::Favorites.new_from_index_page(f)|
       end
   end
 
