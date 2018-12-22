@@ -6,7 +6,7 @@ class OprahsFavoriteThings::Scraper
 
   def scrape_favorites_index
     html = open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654") #grabs HTML that makes up landing page
-    doc = Nokogiti::HTML(html)
+    doc = Nokogiri::HTML(html) #converts HtML string returned by open-uri method and converts to a Node set
     doc.css(".favorites").each do |favorites|
         ****.text
     self.get_page.css("<a href="https://www.amazon.com/b?node=18188463011&amp;?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a> #first item
