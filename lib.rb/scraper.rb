@@ -23,7 +23,8 @@ class OprahsFavoriteThings::Scraper
   def make_favorites
     self.get_favorites.each do |f|
       favorite = Favorite.new
-      favorite.description = post.css ("").text
+      favorite.title = <h2 class="title___3Yk1c mb6 mt0 lh-none">APL: Athletic Propulsion Labs Women's Techloom Bliss Sneakers</h2>
+      favorite.description = post.css ("<p class="">Easily go from the gym to a nice lunch in these stylish sneakers, which come in seven different colors.</p>").text
       favorite.cost = <strong>1. Burt's Bees Holiday Family Pajamas, $10+.css ().text[01]
       favorite.retailer = <button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5 justify-center lh-denone ls-normal pt0 pb0 pl5 df bw-1px items-center"><span class="icon___1DgK6 lh-copy f2 white icon icon-shop"></span><span class="vendorName___1o43U founders-mono f3 f4-m ttu white">Amazon</span></button>.css().text
       favorite.image = <img src="https://media2.s-nbcnews.com/j/newscms/2018_45/1384009/holiday_family_pajamas_cf552b884374f83627d0eb3044f75f53.fit-720w.jpg" alt="">
