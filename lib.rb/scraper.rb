@@ -24,7 +24,7 @@ class OprahsFavoriteThings::Scraper
     self.get_favorites.each do |f|
       favorite = Favorite.new
       favorite.description = post.css ("").text
-      favorite.cost = **.css ().text
+      favorite.cost = <strong>1. Burt's Bees Holiday Family Pajamas, $10+.css ().text[01]
       favorite.retailer = **.css().text
 
       Scraper.new.print_favorite
