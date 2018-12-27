@@ -11,3 +11,6 @@
 :a href="https://www.amazon.com/gp/product/B07HJJ92Z3?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a>
 <h2 class="title___3Yk1c mb6 mt0 lh-none">Glamourpuss NYC Knitted Faux Fur Mitten</h2> #third item's title
 ")
+
+<h1 class="headline___CuovH f8 f9-m fw3 mb3 mt0 publico-hed lh-title">Oprah's Favorite Things 2018: Oprah's picks announced!</h1>
+#this h1 is header/main tag
