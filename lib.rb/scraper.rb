@@ -46,8 +46,4 @@ class OprahsFavoriteThings::Scraper
 end
 
 
-
-
-
-
 end

@@ -1,7 +1,7 @@
 #binding "pry"
 class OprahsFavoriteThings::Favorites
 
-  attr_accessors :description, :cost, :retailer # these are the three attributes to be extracted from site
+  attr_accessors :title, :description, :cost, :image,:retailer # these are the five attributes to be extracted from site
 
   @@all - [] # empty array in which to place the favorites
 
