@@ -15,6 +15,7 @@ first item price: project.css <span class="ListicleProduct__priceBtn cost___1u0d
 
 first item price: project. css <strong>1. Burt's Bees Holiday Family Pajamas, $10+, <a href="https://www.amazon.com/b?node=18188463011&amp;?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a></strong>
 
+first item image: project.css <img src="https://media2.s-nbcnews.com/j/newscms/2018_45/1384009/holiday_family_pajamas_cf552b884374f83627d0eb3044f75f53.fit-720w.jpg" alt="">
 
 
 second item title: project.css <a href="https://www.amazon.com/gp/product/B07FF7NVSM?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a>#second item
@@ -28,6 +29,8 @@ second item BETTER DETAILED description: <p class="">Easily go from the gym to a
 second item price: project.css <strong>2. APL: Athletic Propulsion Labs Women's Techloom Bliss Sneakers, $200, <a href="https://www.amazon.com/gp/product/B07FF7NVSM?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a></strong>
 second item price: project.css Bettr HTML <span class="ListicleProduct__priceBtn cost___1u0dk cost___1P-qJ ls-normal lh-none df items-center justify-center bg-transparent fw5 founders-mono">$<!-- -->200</span>
 
+second item image: project.css <img src="https://media2.s-nbcnews.com/j/newscms/2018_45/1384010/31vqjoycptl_58f2a16a72fe917cc1a76bde8aa2ec6c.fit-720w.jpg" alt="">
+
 
 third item title: project.css :a href="https://www.amazon.com/gp/product/B07HJJ92Z3?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a>
 <h2 class="title___3Yk1c mb6 mt0 lh-none">Glamourpuss NYC Knitted Faux Fur Mitten</h2> #third item's title
@@ -38,3 +41,5 @@ third item BETTER DETAILED description: project.css <p class="">Dress up any out
 
 third item price: project.css <strong>3. Glamourpuss NYC Knitted Faux Fur Mitten, $78, <a href="https://www.amazon.com/gp/product/B07HJJ92Z3?tag=118330-oprahfavoritethings-20" target="_blank">Amazon</a></strong>
 third item BETTER price: project.css <span class="ListicleProduct__priceBtn cost___1u0dk cost___1P-qJ ls-normal lh-none df items-center justify-center bg-transparent fw5 founders-mono">$<!-- -->78</span>
+
+third item image: project.css <img src="https://media3.s-nbcnews.com/j/newscms/2018_45/1384014/glamourpuss_nyc_knitted_faux_fur_mitten_e5e1666209210a2c682844b9d9b492f8.fit-720w.jpg" alt="">
