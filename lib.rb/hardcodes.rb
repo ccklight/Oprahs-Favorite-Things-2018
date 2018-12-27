@@ -1,6 +1,7 @@
 main title: project.css <h1 class="headline___CuovH f8 f9-m fw3 mb3 mt0 publico-hed lh-title">Oprah's Favorite Things 2018: Oprah's picks announced!</h1>
 #this h1 is header/main tag
 
+ vendor for all:  project.css <button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5 justify-center lh-none ls-normal pt0 pb0 pl5 df bw-1px items-center"><span class="icon___1DgK6 lh-copy f2 white icon icon-shop"></span><span class="vendorName___1o43U founders-mono f3 f4-m ttu white">Amazon</span></button>
 
 GOOD: first item title: project.css <h2 class="title___3Yk1c mb6 mt0 lh-none">Burt's Bees Holiday Family Pajamas</h2>
 
