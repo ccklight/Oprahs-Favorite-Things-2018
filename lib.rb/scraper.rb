@@ -25,7 +25,7 @@ class OprahsFavoriteThings::Scraper
       favorite = Favorite.new
       favorite.description = post.css ("").text
       favorite.cost = <strong>1. Burt's Bees Holiday Family Pajamas, $10+.css ().text[01]
-      favorite.retailer = <button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5 justify-center lh-none ls-normal pt0 pb0 pl5 df bw-1px items-center"><span class="icon___1DgK6 lh-copy f2 white icon icon-shop"></span><span class="vendorName___1o43U founders-mono f3 f4-m ttu white">Amazon</span></button>.css().text
+      favorite.retailer = <button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5 justify-center lh-denone ls-normal pt0 pb0 pl5 df bw-1px items-center"><span class="icon___1DgK6 lh-copy f2 white icon icon-shop"></span><span class="vendorName___1o43U founders-mono f3 f4-m ttu white">Amazon</span></button>.css().text
 
       Scraper.new.print_favorite
       end
