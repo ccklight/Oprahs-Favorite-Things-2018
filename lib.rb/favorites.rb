@@ -1,7 +1,7 @@
 #binding "pry"
 class OprahsFavoriteThings::Favorites
 
-  attr_accessors :title, :description, :cost, :image,:retailer # these are the five attributes to be extracted from site
+  attr_accessors :title, :description, :cost, :image, :retailer # these are the five attributes to be extracted from site
 
   @@all - [] # empty array in which to place the favorites
 
@@ -24,9 +24,12 @@ class OprahsFavoriteThings::Favorites
 
 
 
-  def initialize(favorites = nil, description = nil, cost = nil, retailer = nil, url = nil)
+  def initialize(favorites = nil, title = nil, description = nil, cost = nil, image = nil, retailer = nil, url = nil)
+    @favorites = favorites
+    @title = title
     @description = description
     @cost = cost
+    @image = image 
     @retailer = retailer
     @url = url
     @@all << self
