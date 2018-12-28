@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+sudo chmod +x bin/cli  # file execute permissions used for testing
+require 'config/environment.rb'
+instance  = OprahsFavoriteThings::CLI.new
+OprahsFavoriteThings::CLI
+# line 5 is wrong. to fix, call the call method that is in my cli.  

@@ -3,6 +3,8 @@ class OprahsFavoriteThings::CLI
   def call
     start
     OprahsFavoriteThings::CLI.new.make_favorites
+    # line 5 is wrong...no need for class method again...could be 'make_favorites'
+    # place binding pry on line 6 
   end
 
 
@@ -54,7 +56,7 @@ class OprahsFavoriteThings::CLI
   end
 
 
-  def print_favorites(from_number)
+  def make_favorites(from_number)
     puts ""
     puts"-----Favorites #{from_number} - #{from_number + 4} -----"
     puts ""

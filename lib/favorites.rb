@@ -1,4 +1,4 @@
-#binding "pry"
+require 'pry'
 class OprahsFavoriteThings::Favorites
 
   attr_accessors :title, :description, :cost, :image, :retailer # these are the five attributes to be extracted from site
@@ -29,7 +29,7 @@ class OprahsFavoriteThings::Favorites
     @title = title
     @description = description
     @cost = cost
-    @image = image 
+    @image = image
     @retailer = retailer
     @url = url
     @@all << self
@@ -51,6 +51,8 @@ class OprahsFavoriteThings::Favorites
     website_url = website.url # Establish that the website is the website
     website.url = https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654 # the website url
   end
+
+binding.pry
 
 
   def doc
