@@ -29,9 +29,10 @@ class OprahsFavoriteThings::Scraper
       favorite.retailer = <button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5 justify-center lh-denone ls-normal pt0 pb0 pl5 df bw-1px items-center"><span class="icon___1DgK6 lh-copy f2 white icon icon-shop"></span><span class="vendorName___1o43U founders-mono f3 f4-m ttu white">Amazon</span></button>.css().text
       favorite.image = <img src="https://media2.s-nbcnews.com/j/newscms/2018_45/1384009/holiday_family_pajamas_cf552b884374f83627d0eb3044f75f53.fit-720w.jpg" alt="">
 
-      Scraper.new.print_favorite
+      Scraper.new.make_favorite
       end
   end
+
 
   def print__favorites
     self.make_favorites
@@ -43,7 +44,7 @@ class OprahsFavoriteThings::Scraper
 
     Scraper.new.print_favorites
 
-end
+  end
 
 
 end
