@@ -1,10 +1,11 @@
+require 'pry'
+
 class OprahsFavoriteThings::CLI
 
   def call
     start
     make_favorites
-    # line 5 is wrong...no need for class method again...could be 'make_favorites'
-    # place binding pry on line 6
+    binding.pry
   end
 
 
