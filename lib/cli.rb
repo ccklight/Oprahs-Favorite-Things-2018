@@ -3,9 +3,9 @@ require 'pry'
 class OprahsFavoriteThings::CLI
 
   def call
-    start
+    OprahsFavoriteThings::Scraper.new.make_favorites
     make_favorites
-    binding.pry
+    start
   end
 
 
@@ -13,7 +13,6 @@ class OprahsFavoriteThings::CLI
     input = nil
     while input != "exit"
     Scraper.new.scrape_index(favorites)
-
     puts ""
     puts "Welcome to Oprah's Favorite Things 2018."
     puts "What number of Oprah's favorite things would you like to see? 1-5, 6-10, 11-15?"
@@ -44,6 +43,7 @@ class OprahsFavoriteThings::CLI
       puts ""
       puts "I don't understand that answer."
       start
+      end
     end
   end
 
@@ -62,9 +62,8 @@ class OprahsFavoriteThings::CLI
     puts"-----Favorites #{from_number} - #{from_number + 4} -----"
     puts ""
     OprahsFavoriteThings::Favorite.all[from_number-1, 10].each.with_index(from_number) do |favorite, index|
-      puts "#{index}. #{{favorite.description} - '#{favorite.retailer}"
-      end
+      puts "#{index}. #{favorite.description} - #{favorite.retailer}"
+        end
   end
-
 
 end
