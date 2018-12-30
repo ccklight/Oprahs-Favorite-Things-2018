@@ -1,9 +1,9 @@
-!/usr/bin/env ruby
-sudo chmod +x bin/cli  # file execute permissions used for testing
+#!/usr/bin/env ruby
+#sudo chmod +x bin/cli  # file execute permissions used for testing
 require 'config/environment.rb'
-instance  = OprahsFavoriteThings::CLI.new
-require 'OprahsFavoriteThings::CLI
+#instance  = OprahsFavoriteThings::CLI.new
+#require 'OprahsFavoriteThings::CLI
 
-'#this line 5 is wrong. to fix, call the call method that is in my cli.
-make_favorites
-start 
+#'#this line 5 is wrong. to fix, call the call method that is in my cli.
+#make_favorites
+#start
