@@ -2,7 +2,9 @@ require 'pry'
 
 class OprahsFavoriteThings::CLI
   def start
-    puts "Hello World" 
+    puts "Hello World from CLI"
+    OprahsFavoriteThings::Favorites.new.start
+
   end
   # def call
   #   OprahsFavoriteThings::Scraper.new.make_favorites

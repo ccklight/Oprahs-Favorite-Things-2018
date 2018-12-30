@@ -1,5 +1,6 @@
 require_relative "../lib/OprahsFavoriteThings/version.rb"
 require_relative "../lib/OprahsFavoriteThings/cli.rb"
+require_relative "../lib/OprahsFavoriteThings/favorites.rb"
 
 require 'nokogiri'
 require 'open-uri'
