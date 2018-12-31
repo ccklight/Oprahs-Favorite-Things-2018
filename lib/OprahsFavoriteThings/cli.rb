@@ -4,8 +4,9 @@ class OprahsFavoriteThings::CLI
   def start
     puts "Hello World from CLI"
     OprahsFavoriteThings::Favorites.new.start
-
+#Instantiate Scraper and run #start and it should puts "Hello from Scraper".
   end
+Scraper.new
   # def call
   #   OprahsFavoriteThings::Scraper.new.make_favorites
   #   make_favorites
