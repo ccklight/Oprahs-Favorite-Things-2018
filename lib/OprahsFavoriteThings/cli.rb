@@ -3,8 +3,8 @@ require 'pry'
 class OprahsFavoriteThings::CLI
   def start
     puts "Hello World from CLI"
-    OprahsFavoriteThings::Favorites.new.start
-    OprahsFavoriteThings::Scraper.new.start
+    # OprahsFavoriteThings::Favorites.new.start
+    # OprahsFavoriteThings::Scraper.new.start
 #Instantiate Scraper and run #start and it should puts "Hello from Scraper".
   end
 
