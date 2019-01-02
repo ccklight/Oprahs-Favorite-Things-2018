@@ -7,11 +7,11 @@ require 'colorize'
 
 require_relative "../config/environment"
 
-require_relative "oprahs_favorite_things_2018/version"
-require_relative "oprahs_favorite_things_2018/favorites"
-require_relative "oprahs_favorite_things_2018/cli"
-require-relative "oprahs_favorite_things_2018/scraper"
-require-relative "oprahs_favorite_things_2018/hardcodes"
+require_relative "OprahsFavoriteThings2018/version"
+require_relative "OprahsFavoriteThings2018/favorites"
+require_relative "OprahsFavoriteThings2018/cli"
+require_relative "OprahsFavoriteThings2018/scraper"
+require_relative "OprahsFavoriteThings2018/hardcodes"
 
 
   class MyError < StandardError # Create subclass of an exception. Source: Stack Overflow
