@@ -2,9 +2,10 @@ require 'pry'
 
 class OprahsFavoriteThings::CLI
   def start
-    puts "Hello World from CLI"
-    # OprahsFavoriteThings::Favorites.new.start
-    # OprahsFavoriteThings::Scraper.new.start
+    puts "Welcome to Oprah'2018 Favorite Things."
+     OprahsFavoriteThings::Favorites.new.start
+     OprahsFavoriteThings::Scraper.new.start
+     
 #Instantiate Scraper and run #start and it should puts "Hello from Scraper".
   end
 
@@ -15,7 +16,7 @@ class OprahsFavoriteThings::CLI
   # end
   #
   #
-  # def start
+  #  def start
   #   input = nil
   #   while input != "exit"
   #   Scraper.new.scrape_index(favorites)
@@ -51,7 +52,7 @@ class OprahsFavoriteThings::CLI
   #     start
   #     end
   #   end
-  # end
+   #end
   #
   #
   # def print_favorite(favorite)

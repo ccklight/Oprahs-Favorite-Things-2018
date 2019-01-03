@@ -4,4 +4,3 @@
 require_relative '../config/environment.rb'
 
 OprahsFavoriteThings::CLI.new.start
-          

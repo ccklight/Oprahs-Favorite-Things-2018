@@ -7,11 +7,11 @@ require 'colorize'
 
 require_relative "../config/environment"
 
-
-require_relative "../lib/OprahsFavoriteThings/favorites"
 require_relative "../lib/OprahsFavoriteThings/cli"
-require_relative "../lib/OprahsFavoriteThings/scraper"
+require_relative "../lib/OprahsFavoriteThings/favorites"
 require_relative "../lib/OprahsFavoriteThings/hardcodes"
+require_relative "../lib/OprahsFavoriteThings/scraper"
+require_relative "../lib/OprahsFavoriteThings/version"
 
 
 #   class MyError < StandardError # Create subclass of an exception. Source: Stack Overflow

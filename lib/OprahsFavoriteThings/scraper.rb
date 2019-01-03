@@ -1,6 +1,11 @@
+require 'pry'
 class OprahsFavoriteThings::Scraper
 
-  # def get_page
+  def start
+    puts "Scraper says Hello World"
+  end
+
+  #  def get_page
   #   Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
   # end
   #
@@ -44,7 +49,7 @@ class OprahsFavoriteThings::Scraper
   #
   #   Scraper.new.print_favorites
   #
-  # end 
+  # end
 
 
 end
