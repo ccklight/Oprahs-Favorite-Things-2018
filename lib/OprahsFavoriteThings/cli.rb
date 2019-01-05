@@ -3,12 +3,17 @@ require 'pry'
 class OprahsFavoriteThings::CLI
   def start
     puts "Welcome to Oprah'2018 Favorite Things."
-     OprahsFavoriteThings::Favorites.new.start
-     a = OprahsFavoriteThings::Scraper.new
-     a.welcome
+    #  OprahsFavoriteThings::Favorites.new.start
+    #  a = OprahsFavoriteThings::Scraper.new
+    #  a.welcome
      OprahsFavoriteThings::Scraper.scrape_favorites
      #binding.pry
 
+     all_favorites = OprahsFavoriteThings::Favorites.all
+     all_favorites.each do |item|
+       binding.pry
+       puts item.product
+    end
 
     # person = Wife.new
     # person.coffee

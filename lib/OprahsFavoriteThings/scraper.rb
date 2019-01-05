@@ -14,9 +14,21 @@ class OprahsFavoriteThings::Scraper
 
 
   def self.scrape_favorites
-    self.get_page.css("div.body___2BbXy ul")[0..14].each do |thing|
-      puts thing.text
+    page = self.get_page
+    #page.css("div.body___2BbXy ul")[0..14].each do |thing|
+    #   OprahsFavoriteThings::Favorites.new(thing.text)
+    #end
+    product = page.css("div.body___2BbXy ul")[0..14].map do |thing|
+       thing.text
     end
+    binding.pry
+    #product_url = page.css("")[0..14].each do |thing|
+    #  thing.text
+    #end
+
+    #product_paraph = page.css("")[0..14].each do |thing|
+    #  thing.text
+    #end
     # css("div.body___2BbXy ul") .This is the code to use to access a favorite thing. .each or . map to iterate over each one.
 
     #Go to site and find a class that's for all of the favorite things.  Place that inside parentheses.
