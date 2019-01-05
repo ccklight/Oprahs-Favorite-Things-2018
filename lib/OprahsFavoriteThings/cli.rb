@@ -4,8 +4,17 @@ class OprahsFavoriteThings::CLI
   def start
     puts "Welcome to Oprah'2018 Favorite Things."
      OprahsFavoriteThings::Favorites.new.start
-     OprahsFavoriteThings::Scraper.new.start
-     
+     a = OprahsFavoriteThings::Scraper.new
+     a.welcome
+     OprahsFavoriteThings::Scraper.scrape_favorites
+     #binding.pry
+
+
+    # person = Wife.new
+    # person.coffee
+
+    #self.go_running
+    # binding.pry
 #Instantiate Scraper and run #start and it should puts "Hello from Scraper".
   end
 

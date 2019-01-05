@@ -12,7 +12,7 @@ require_relative "../lib/OprahsFavoriteThings/favorites"
 require_relative "../lib/OprahsFavoriteThings/hardcodes"
 require_relative "../lib/OprahsFavoriteThings/scraper"
 require_relative "../lib/OprahsFavoriteThings/version"
-
+#require_relative "../lib/OprahsFavoriteThings/wife"
 
 #   class MyError < StandardError # Create subclass of an exception. Source: Stack Overflow
 #     def initialize(msg = "You've triggered a MyError")

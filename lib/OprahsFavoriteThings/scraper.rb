@@ -1,19 +1,27 @@
 require 'pry'
 class OprahsFavoriteThings::Scraper
 
-  def start
+  def welcome
     puts "Scraper says Hello World"
   end
 
-  #  def get_page
-  #   Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
-  # end
-  #
-  #
-  # def get_favorites
-  #   self.get_page.css(".")
-  # end
-  #
+   def self.get_page # class method---this is like the machine itself.
+     Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
+    #self.get_page
+    #binding.pry
+
+  end
+
+
+  def self.scrape_favorites
+    self.get_page.css("div.body___2BbXy ul")[0..14].each do |thing|
+      puts thing.text
+    end
+    # css("div.body___2BbXy ul") .This is the code to use to access a favorite thing. .each or . map to iterate over each one.
+
+    #Go to site and find a class that's for all of the favorite things.  Place that inside parentheses.
+  end
+
   #
   # def scrape_favorites_index
   #   html = open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654") #grabs HTML that makes up landing page

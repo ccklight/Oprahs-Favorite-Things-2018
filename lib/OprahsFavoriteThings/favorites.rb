@@ -1,8 +1,15 @@
 require 'pry'
+
 class OprahsFavoriteThings::Favorites
+    attr_accessor :products
 
   def start
     puts "Hello World from favorites"
+  end
+
+  def initialize(products)
+    @products = products
+
   end
 #   attr_accessors :title, :description, :cost, :image, :retailer # these are the five attributes to be extracted from site
 #
