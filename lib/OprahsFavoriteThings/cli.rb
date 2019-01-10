@@ -13,6 +13,7 @@ class OprahsFavoriteThings::CLI
      all_favorites.each do |item|
        binding.pry
        puts item.product
+          end
     end
 
 
@@ -80,4 +81,4 @@ class OprahsFavoriteThings::CLI
         end
   end
 
- end
+end

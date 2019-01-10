@@ -9,7 +9,6 @@ require_relative "../config/environment"
 
 require_relative "../lib/OprahsFavoriteThings/cli"
 require_relative "../lib/OprahsFavoriteThings/favorites"
-require_relative "../lib/OprahsFavoriteThings/hardcodes"
 require_relative "../lib/OprahsFavoriteThings/scraper"
 require_relative "../lib/OprahsFavoriteThings/version"
 #require_relative "../lib/OprahsFavoriteThings/wife"

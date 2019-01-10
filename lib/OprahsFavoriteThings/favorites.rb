@@ -1,7 +1,7 @@
 require 'pry'
 
 class OprahsFavoriteThings::Favorites
-    attr_accessor :favorites, :title, :description, :price, :image, :retailer
+    attr_accessor :favorites, :title, :description, :price, :image, :retailer, :url
 
     @@all = []
 
