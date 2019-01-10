@@ -21,20 +21,20 @@ class OprahsFavoriteThings::Favorites
   # end
 
   def initialize(favorites = nil, title = nil, description = nil, price = nil, image = nil, retailer = nil, url = nil)
+      @favorites = favorites
+      @title = title
+      @description = description
+      @price = price
+      @image = image
+      @retailer = retailer
+      @url = url
 
-    @@all << self
+      @@all << self
   end
 
 
 
-  #   @favorites = favorites
-  #   @title = title
-  #   @description = description
-  #   @cost = cost
-  #   @image = image
-  #   @retailer = retailer
-  #   @url = url
-  #   @@all << self
+  #
   # end
 
 
