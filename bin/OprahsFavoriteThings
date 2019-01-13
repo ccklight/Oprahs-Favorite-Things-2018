@@ -1,6 +1,6 @@
 
  #!/usr/bin/env ruby
-#sudo chmod +x bin/cli  # file execute permissions used for testing
+#sudo chmod +x bin/cli  
 require_relative '../config/environment.rb'
 
 OprahsFavoriteThings::CLI.new.start

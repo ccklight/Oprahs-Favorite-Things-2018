@@ -6,7 +6,7 @@ class OprahsFavoriteThings::Scraper
   end
 
 
-  def self.get_page # class method---this is like the machine itself.
+  def self.get_page 
      Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
     self.get_page
     #binding.pry

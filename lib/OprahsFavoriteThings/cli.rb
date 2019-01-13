@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 class OprahsFavoriteThings::CLI
 
@@ -12,28 +12,28 @@ class OprahsFavoriteThings::CLI
 #        puts item.product
 #           end
 # end
-#
+
 #   def call
 #     OprahsFavoriteThings::Scraper.new.make_favorites
 #     make_favorites
 #     start
 #   end
-#
+
 #     Scraper.new.scrape_index(favorites)
 #     favorites = OprahsFavoriteThings::Favorite.find(input.to_i)
 
   def start
-    all_favorites = OprahsFavoriteThings::Favorites.all
+    favorites = OprahsFavoriteThings::Favorites.all
     input = nil
     while input != "exit"
     puts ""
-    puts "Welcome to Oprah'2018 Favorite Things."
+    puts "Welcome to Oprah's Favorite Things of 2018."
     puts "What number of Oprah's favorite things would you like to see? 1-5, 6-10, 11-15?"
     puts ""
 
     input = gets.strip.to_i
 
-    print_favorites(favorites[input])
+    print_favorite(favorites[input])
 
     puts ""
     puts "What favorites would you like more information on?"
@@ -79,4 +79,4 @@ class OprahsFavoriteThings::CLI
              end
       end
 
-end
+end 
