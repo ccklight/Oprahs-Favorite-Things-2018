@@ -2,24 +2,25 @@ require 'pry'
 
 class OprahsFavoriteThings::CLI
 
-  OprahsFavoriteThings::Favorites.new.start
-     a = OprahsFavoriteThings::Scraper.new
-     a.welcome
-     OprahsFavoriteThings::Scraper.scrape_favorites
-
-     all_favorites.each do |item|
-  #      binding.pry
-       puts item.product
-          end
-    end
-
-  def call
-    OprahsFavoriteThings::Scraper.new.make_favorites
-    make_favorites
-    start
-  end
-  #   Scraper.new.scrape_index(favorites)
-  #   favorites = OprahsFavoriteThings::Favorite.find(input.to_i)
+#   OprahsFavoriteThings::Favorites.new.start
+#      a = OprahsFavoriteThings::Scraper.new
+#      a.welcome
+#      OprahsFavoriteThings::Scraper.scrape_favorites
+#
+#      all_favorites.each do |item|
+#
+#        puts item.product
+#           end
+# end
+#
+#   def call
+#     OprahsFavoriteThings::Scraper.new.make_favorites
+#     make_favorites
+#     start
+#   end
+#
+#     Scraper.new.scrape_index(favorites)
+#     favorites = OprahsFavoriteThings::Favorite.find(input.to_i)
 
   def start
     all_favorites = OprahsFavoriteThings::Favorites.all
@@ -60,7 +61,6 @@ class OprahsFavoriteThings::CLI
      end
 
 
-
      def print_favorite(favorite)
        puts ""
        puts ""
@@ -68,7 +68,6 @@ class OprahsFavoriteThings::CLI
        puts "Price: #{favorite.price}"
        puts "Retailer: #{favorite.retailer}"
      end
-
 
 
       def make_favorites(from_number)

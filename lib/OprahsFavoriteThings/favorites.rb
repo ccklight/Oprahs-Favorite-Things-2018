@@ -1,32 +1,32 @@
 require 'pry'
 
 class OprahsFavoriteThings::Favorites
-    attr_accessor :favorites, :title, :description, :price, :image, :retailer, :url
+    attr_accessor :url
 
-    @@all = []
+    #@@all = []
 
 
   def self.all
-    @@all
+    self.new.products
+    #@@all
   end
 
+  def self.find_by_name(title)
+    self.all.find do |product|
+      product.title ===title
+    end
+  end
+
+
+  def initialize
+    @url = "https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"
+  end
 
   def doc
       @doc  ||= Nokogiri::HTML(open(self.url)) #doc variable is equivalent to HTML string Nokogiri retrieves
   end
 
-#   def initialize(favorites = nil, title = nil, description = nil, price = nil, image = nil, retailer = nil, url = nil)
-#       @favorites = favorites
-#       @title = title
-#       @description = description
-#       @price = price
-#       @image = image
-#       @retailer = retailer
-#       @url = url
-#
-#       @@all << self
-#   end
-#
+
 #
 #   def self.find_by_name(favorites)
 #     self.all.find do |favorites|
