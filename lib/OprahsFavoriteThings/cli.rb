@@ -1,7 +1,12 @@
 require 'pry'
 
 class OprahsFavoriteThings::CLI
+
   def start
+    all_favorites = OprahsFavoriteThings::Favorites.all
+    input = nil
+    while input != "exit"
+    puts ""  
     puts "Welcome to Oprah'2018 Favorite Things."
      OprahsFavoriteThings::Favorites.new.start
      a = OprahsFavoriteThings::Scraper.new
@@ -9,7 +14,7 @@ class OprahsFavoriteThings::CLI
      OprahsFavoriteThings::Scraper.scrape_favorites
      #binding.pry
 
-     all_favorites = OprahsFavoriteThings::Favorites.all
+
      all_favorites.each do |item|
        binding.pry
        puts item.product
@@ -24,11 +29,10 @@ class OprahsFavoriteThings::CLI
   end
 
 
-  #  def start
-  #   input = nil
-  #   while input != "exit"
+
+  #
   #   Scraper.new.scrape_index(favorites)
-  #   puts ""
+
   #   puts "Welcome to Oprah's Favorite Things 2018."
   #   puts "What number of Oprah's favorite things would you like to see? 1-5, 6-10, 11-15?"
   #   puts ""
