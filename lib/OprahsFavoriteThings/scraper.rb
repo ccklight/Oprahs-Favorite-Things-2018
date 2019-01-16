@@ -9,7 +9,6 @@ class OprahsFavoriteThings::Scraper
 
   def self.get_page
     Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
-    self.get_page
     #binding.pry
   end
 
@@ -21,8 +20,9 @@ class OprahsFavoriteThings::Scraper
     page.css("div.body___2BbXy ul")[0..14].each do |thing|
       OprahsFavoriteThings::Favorites.new(thing.text)
       end
-    product_urls = page.css("")[0..14].map do |thing|
-      end
+    # product_urls = page.css("")[0..14].map do |thing|
+    #   thing.text
+    #   end
     product = page.css("div.body___2BbXy ul")[0..14].map do |thing|
        thing.text
       end

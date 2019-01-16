@@ -29,19 +29,18 @@ class OprahsFavoriteThings::Favorites
     @favorites = []
 
     doc.css('div.listicleProduct').each do |div|
-      favorite = OprahsFavoriteThings::Favorite.new
+      favorite = OprahsFavoriteThings::Favorites.new
       favorite.price = div.css('span[class*=price]').text
       favorite.title = div.css('h2').text
       favorite.description = div.css('+ p').text
       favorite.image = div.css('img')[0][:src]
       favorite.retailer = div.css('span[class*=vendor]').text
       favorite.url = div.css('a')[0][:href]
-          end
       @favorites << favorite
-
-  end
+          end
       @favorites
 
+  end
 
 
     def doc

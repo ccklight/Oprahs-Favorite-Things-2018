@@ -3,12 +3,9 @@ class OprahsFavoriteThings::CLI
 require 'pry'
 
   def start
-    OprahsFavoriteThings::Favorites.new.start
-    #OprahsFavoriteThings::new.start
-    #a = OprahsFavoriteThings::Scraper.new
-    #a.welcome
-    #OprahsFavoriteThings::Scraper.scrape_favorites
-    #favorites = OprahsFavoriteThings::Favorites.all
+
+    OprahsFavoriteThings::Scraper.scrape_favorites
+    favorites = OprahsFavoriteThings::Favorites.all
     OprahsFavoriteThings::Scraper.get_page
 #binding.pry
 
@@ -16,7 +13,12 @@ require 'pry'
     while input != "exit"
     puts ""
     puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things."
-    #OprahsFavoriteThings::Favorites.all
+
+    favorites.each do |favorite|
+      puts favorite.title
+      
+      end
+
     puts ""
 
     input = gets.strip.to_i
