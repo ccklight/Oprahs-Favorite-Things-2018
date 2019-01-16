@@ -1,4 +1,5 @@
 require 'pry'
+
 class OprahsFavoriteThings::Scraper
 
   def welcome
@@ -29,47 +30,25 @@ class OprahsFavoriteThings::Scraper
   end
 
 
-  #   def descriptors_of_favorites
-  #     container = favorites, title description, price, image, retailer, url
-  #     a = favorites
-  #     b = title
-  #     c = description
-  #     d = price
-  #     e = image
-  #     f = retailer
-  #     g = url
-  #   end
-  #
-  #   def b(title)
-  #     css("<h2 class="title___3Yk1c mb6 mt0") each do |title|
-  #       end
-  #   end
-  #
-  #
-  #   def c(description)
-  #   css("<p class="">) each do |description|
-  #       end
-  #     end
-  #
-  #
-  #   def d(price)
-  #     css("<span class="ListicleProduct__priceBtn cost___1u0dk cost) each do |price|
-  #       end
-  #   end
-  #
-  #
-  #   def e(image)
-  #     css("<picture class=""><source media="(min-width: 758px") each do |image|
-  #       end
-  #   end
-  #
-  #
-  #   def f(retailer)
-  #     css("<button class="ListicleProduct__vendorBtn vendor___2BDSG vendor___1RnZ5") each do |retailer|
-  #       end
-  #   end
-  #
-  #
+  def print__favorites
+    self.make_favorites
+    Favorite.all.each do |favorite|
+      if favorite.description
+        puts "Favorites: #{favorite.description}"
+        puts "Title: #{favorite.title}"
+        puts "Description: #{favorite.description}"
+        puts "Price: #{favorite.price}"
+        puts "Image: #{favorite.image}"
+        puts "Retailer: #{favorite.retailer}"
+          end
+        end
+    Scraper.new.print_favorites
+
+  end
+
+end 
+
+
   #   product_paraph = page.css("")[0..14].each do |thing|
   #    thing.text
   #   end
@@ -86,19 +65,3 @@ class OprahsFavoriteThings::Scraper
   # end
   #
   #
-  # def print__favorites
-  #   self.make_favorites
-  #   Favorite.all.each do |favorite|
-  #     if favorite.description
-  #       puts "Favorites: #{favorite.description}"
-  #       puts "Title: #{favorite.title}"
-  #       puts "Description: #{favorite.description}"
-  #       puts "Price: #{favorite.price}"
-  #       puts "Image: #{favorite.image}"
-  #       puts "Retailer: #{favorite.retailer}"
-  #
-  #   Scraper.new.print_favorites
-  # end
-  #
-
-end
