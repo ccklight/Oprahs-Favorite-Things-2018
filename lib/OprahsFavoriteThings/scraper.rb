@@ -8,7 +8,7 @@ class OprahsFavoriteThings::Scraper
 
 
   def self.get_page
-     Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
+    Nokogiri::HTML(open("https://www.today.com/style/oprahs-favorite-things-2018-oprahs-picks-announced-t141654"))
     self.get_page
     #binding.pry
   end
@@ -46,7 +46,7 @@ class OprahsFavoriteThings::Scraper
 
   end
 
-end 
+end
 
 
   #   product_paraph = page.css("")[0..14].each do |thing|

@@ -9,7 +9,7 @@ class OprahsFavoriteThings::Favorites
   end
 
 
-  def self.find_by_name title
+  def self.find_by_name (title)
     self.all.find do |favorite|
       favorite.title === title
       end
@@ -40,13 +40,13 @@ class OprahsFavoriteThings::Favorites
       @favorites << favorite
 
   end
+      @favorites
 
-    @favorites
 
 
     def doc
       @doc ||= Nokogiri::HTML(open(@url))
-      #retrieves
+
     end
 
 

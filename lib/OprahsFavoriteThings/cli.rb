@@ -3,13 +3,15 @@ class OprahsFavoriteThings::CLI
 require 'pry'
 
   def start
-    #OprahsFavoriteThings::Favorites.new.start
+    OprahsFavoriteThings::Favorites.new.start
     #OprahsFavoriteThings::new.start
     #a = OprahsFavoriteThings::Scraper.new
     #a.welcome
     #OprahsFavoriteThings::Scraper.scrape_favorites
-    favorites = OprahsFavoriteThings::Favorites.all
+    #favorites = OprahsFavoriteThings::Favorites.all
+    OprahsFavoriteThings::Scraper.get_page
 #binding.pry
+
     input = nil
     while input != "exit"
     puts ""
