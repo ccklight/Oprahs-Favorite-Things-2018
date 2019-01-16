@@ -12,7 +12,7 @@ class OprahsFavoriteThings::CLI
     while input != "exit"
     puts ""
     puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things."
-    puts ""
+    #puts ""
 
     input = gets.strip.to_i
     print_favorite(favorites[input])
