@@ -1,5 +1,5 @@
 class OprahsFavoriteThings::Favorites
-  attr_accessor :url
+  attr_accessor  :title, :description, :price, :image, :retailer, :url
 
   # class methods
   def self.all

@@ -5,7 +5,7 @@ class OprahsFavoriteThings::CLI
     #OprahsFavoriteThings::new.start
     #a = OprahsFavoriteThings::Scraper.new
     #a.welcome
-    OprahsFavoriteThings::Scraper.scrape_favorites
+    #OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
 
     input = nil
