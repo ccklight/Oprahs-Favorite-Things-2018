@@ -2,7 +2,10 @@ class OprahsFavoriteThings::CLI
 
   def start
     #OprahsFavoriteThings::Favorites.new.start
-    #OprahsFavoriteThings::Product.new.start
+    #OprahsFavoriteThings::new.start
+    #a = OprahsFavoriteThings::Scraper.new
+    #a.welcome
+    OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
     input = nil
     while input != "exit"
