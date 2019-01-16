@@ -2,7 +2,7 @@ require 'pry'
 class OprahsFavoriteThings::Scraper
 
   def welcome
-    puts "Scraper says Hello World"
+    puts ""
   end
 
 

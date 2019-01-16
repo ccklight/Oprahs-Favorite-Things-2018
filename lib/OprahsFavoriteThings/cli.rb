@@ -1,5 +1,7 @@
 class OprahsFavoriteThings::CLI
 
+require 'pry'
+
   def start
     #OprahsFavoriteThings::Favorites.new.start
     #OprahsFavoriteThings::new.start
@@ -7,12 +9,13 @@ class OprahsFavoriteThings::CLI
     #a.welcome
     #OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
-
+#binding.pry
     input = nil
     while input != "exit"
     puts ""
     puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things."
-    #puts ""
+    #OprahsFavoriteThings::Favorites.all
+    puts ""
 
     input = gets.strip.to_i
     print_favorite(favorites[input])
