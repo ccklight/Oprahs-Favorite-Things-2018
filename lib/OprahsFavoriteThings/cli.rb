@@ -7,6 +7,7 @@ class OprahsFavoriteThings::CLI
     #a.welcome
     OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
+
     input = nil
     while input != "exit"
     puts ""

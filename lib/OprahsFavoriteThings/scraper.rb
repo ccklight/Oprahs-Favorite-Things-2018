@@ -14,8 +14,10 @@ class OprahsFavoriteThings::Scraper
 
 
   def self.scrape_favorites
+    #self.get_page.css("div.body_2BbXy ul").each do |thing|
+    # puts thing.text     then end after this
     page = self.get_page.css
-    self.get_page.css("div.body___2BbXy ul")[0..14].each do |thing|
+    page.css("div.body___2BbXy ul")[0..14].each do |thing|
       OprahsFavoriteThings::Favorites.new(thing.text)
       end
     product_urls = page.css("")[0..14].map do |thing|
