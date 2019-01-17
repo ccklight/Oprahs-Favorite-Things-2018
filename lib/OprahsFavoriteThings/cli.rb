@@ -1,22 +1,19 @@
 class OprahsFavoriteThings::CLI
 
-require 'pry'
-
   def start
 
     OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
     OprahsFavoriteThings::Scraper.get_page
-#binding.pry
 
     input = nil
     while input != "exit"
     puts ""
-    puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things."
+    puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things:"
 
     favorites.each do |favorite|
       puts favorite.title
-      
+
       end
 
     puts ""
