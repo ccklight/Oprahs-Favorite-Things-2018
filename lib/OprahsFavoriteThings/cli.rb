@@ -1,20 +1,17 @@
 class OprahsFavoriteThings::CLI
 
   def start
-
     OprahsFavoriteThings::Scraper.scrape_favorites
     favorites = OprahsFavoriteThings::Favorites.all
-    OprahsFavoriteThings::Scraper.get_page
 
     input = nil
     while input != "exit"
     puts ""
     puts "Welcome to Oprah's Favorite Things of 2018. From this list, enter a number from 1-15:"
 
-    favorites.each do |favorite|
-      puts favorite.title
-
-      end
+    favorites.each_with_index do |favorite, index|
+      puts "#{index}. #{favorite.title}"
+    end
 
     puts ""
 
