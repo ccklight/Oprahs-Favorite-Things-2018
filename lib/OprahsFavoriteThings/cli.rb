@@ -9,7 +9,7 @@ class OprahsFavoriteThings::CLI
     input = nil
     while input != "exit"
     puts ""
-    puts "Welcome to Oprah's Favorite Things 2018. Here is a list of Oprah's Favorite Things:"
+    puts "Welcome to Oprah's Favorite Things of 2018. From this list, enter a number from 1-15:"
 
     favorites.each do |favorite|
       puts favorite.title
@@ -44,12 +44,8 @@ class OprahsFavoriteThings::CLI
       start
     elsif input == "n"
       puts ""
-      puts" Thank you. Have a great day."
+      puts" Thank you. Goodbye."
       exit
-    else
-      puts ""
-      puts "I don't understand that answer."
-      start
       end
     end
    end
@@ -62,16 +58,5 @@ class OprahsFavoriteThings::CLI
     puts "Price: #{favorite.price}"
     puts "Retailer: #{favorite.retailer}"
   end
-
-
-  # def make_favorites(from_number)
-  #   puts ""
-  #   puts"-----Favorites #{from_number} - #{from_number + 4} -----"
-  #   puts ""
-  #   OprahsFavoriteThings::Favorite.all[from_number-1, 10].each.with_index(from_number) do |favorite, index|
-  #     puts "#{index}. #{favorite.description} - #{favorite.retailer}"
-  #       end
-  # end
-
 
 end
